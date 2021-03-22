@@ -16,7 +16,7 @@ html{
     width: 100%;
     display:flex;
     align-items: center;
-    padding: 20px 0;
+    position: fixed;
 }
 
 .container{
@@ -78,11 +78,20 @@ html{
     height: 40px;
     width: 90%;
     font-size: 20px;
-    margin-top: -2050px;
+    margin-top: -2350px;
     margin-left: -20px ;
     position:absolute;
     font-family: 'Montserrat', sans-serif;
     position: fixed;
+}
+
+/*Animacion background*/
+.block{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background-color: #1e1f22;
+    box-shadow: 10px 10px 50px rgb(0,0,0,0.5);
 }
 
 /*Corregir formulario*/
@@ -139,7 +148,7 @@ html{
     }
 
     .timeline ul li:hover:after{
-        background-color: blueviolet;
+        background-color: #27d545;
     }
 
     .timeline-content .solution{
@@ -154,7 +163,7 @@ html{
         margin-left: 25%;
         font-size: 20px;
         position: fixed;
-        margin-top: -120px;
+        margin-top: -90px;
         margin-left: -350px;
 
     }
