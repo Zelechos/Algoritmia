@@ -1,7 +1,7 @@
 'use strict'
 window.addEventListener("load" , ()=>{
     const Container = document.querySelector(".head");
-    for(let i = 0; i<=20;i++){
+    for(let i = 0; i<= 25;i++){
         const blocks = document.createElement('div');
         blocks.classList.add("block");
         Container.appendChild(blocks);

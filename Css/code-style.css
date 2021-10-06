@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* Cambiar los estilos de ambos y reemplazarlos con flexbox */
+#Izquierda{
+  width: 45%;
+  height:750px;
+  background-color: #ffffff;
+  float: left;
+  margin-left: -10px;
+  margin-top: -10px;
+  position: fixed;
+  color: #3927cc;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#Derecha{
+  width: 49%;
+  height: 100%;
+  background-color: #5f41f4;
+  float: right;
+  margin-right: none;
+  margin-top: -10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+h1{
+  font-size: 60px;
+}
+
+a{
+  margin-left: 300px;
+}
