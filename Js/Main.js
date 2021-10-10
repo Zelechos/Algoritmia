@@ -1,11 +1,6 @@
     'use strict'
     window.addEventListener("load" , ()=>{
 
-// Efocando el Input
-        const form = document.querySelector("#form");
-        form.focus();
-
-
 // Animacion de Cuadros como Background
         const Container = document.querySelector(".head");
         for(let i = 0; i<= 25;i++){
@@ -38,9 +33,9 @@
         animate();
 
 
-
-
-
+// Efocando el Input
+        const form = document.querySelector("#form");
+        form.focus();
     });
 
 
