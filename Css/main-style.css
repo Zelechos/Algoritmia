@@ -201,8 +201,6 @@ a{
     100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
 }
 
-
-
 /*Corregir formulario*/
 @media only screen and (min-width: 768px){
 
