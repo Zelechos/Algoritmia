@@ -10,6 +10,12 @@ html{
     color: white;
 }
 
+a{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: aliceblue;
+}
+
 .head{
     background-color: #101010;
     min-height: 3vh;
@@ -27,7 +33,6 @@ html{
     justify-content: center;
     padding: 100px 0;
     background-color: #101010;
-    
 }
 
 .timeline{
@@ -36,9 +41,11 @@ html{
     max-width: 800px;
     margin: 0 auto;
     position: relative;
+    text-align: center;
 }
 
 .timeline ul{
+    z-index:1;
     list-style: none;
 }
 
@@ -83,16 +90,21 @@ html{
 }
 
 .formulario{
-    border-radius: 7px;
+    width: 50%;
     height: 40px;
-    width: 90%;
     font-size: 20px;
-    margin-top: -2350px;
-    margin-left: -20px ;
-    position:absolute;
-    font-family: 'Montserrat', sans-serif;
     position: fixed;
+    top: 10px;
+    z-index: 2;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    color: #5f41f4;
+    padding: 10px;
+    border: solid 5px #5f41f4;
 }
+
 
 /*Animacion background*/
 .block{
@@ -102,6 +114,18 @@ html{
     border-radius: 3px;    
     background-color:#5f41f4;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
+}
+
+.block p{
+    margin-top: 25px;
+    font-size: 9px;
+    text-align: center;
+    
+}
+
+.img-separator{
+    height: 10px;
+    background-image: url("https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif");
 }
 
   /* Keyframes para la animacion de los contenidos */
@@ -243,18 +267,6 @@ html{
         top: -30px;
     }
 
-    .formulario{
-        border-radius: 7px;
-        height: 40px;
-        width: 45%;
-        margin-left: 25%;
-        font-size: 20px;
-        position: fixed;
-        margin-top: -90px;
-        margin-left: -350px;
-        color: #5f41f4;
-        padding: 10px;
-        border: solid 5px #5f41f4;
-    }
+
 
 }
