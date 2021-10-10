@@ -1,7 +1,7 @@
     'use strict'
 
 // Efocando el Input
-    const form = document.querySelector("#form");
+    // const form = document.querySelector("#form");
     // form.focus();
 
     window.addEventListener("load" , ()=>{
