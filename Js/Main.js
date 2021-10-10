@@ -1,4 +1,9 @@
     'use strict'
+
+// Efocando el Input
+    const form = document.querySelector("#form");
+    form.focus();
+
     window.addEventListener("load" , ()=>{
 
 // Animacion de Cuadros como Background
@@ -31,11 +36,6 @@
             });
         }
         animate();
-
-
-// Efocando el Input
-        const form = document.querySelector("#form");
-        form.focus();
     });
 
 
