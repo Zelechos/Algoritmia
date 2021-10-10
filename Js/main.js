@@ -2,7 +2,7 @@
 
 // Efocando el Input
     const form = document.querySelector("#form");
-    form.focus();
+    // form.focus();
 
     window.addEventListener("load" , ()=>{
 
