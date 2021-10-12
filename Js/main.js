@@ -1,9 +1,5 @@
     'use strict'
 
-// Efocando el Input
-    // const form = document.querySelector("#form");
-    // form.focus();
-
     window.addEventListener("load" , ()=>{
 
 // Animacion de Cuadros como Background
@@ -36,6 +32,18 @@
             });
         }
         animate();
+
+
+    // Efocando el Input
+    const form = document.querySelector("#form");
+
+    //Evento Keypress
+    window.addEventListener("keypress" , (event)=>{
+        if(13 === event.keyCode){
+            form.focus();
+        }
+    });
+
     });
 
 
