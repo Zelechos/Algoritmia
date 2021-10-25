@@ -1,6 +1,6 @@
-    'use strict'
+'use strict'
 
-    window.addEventListener("load" , ()=>{
+window.addEventListener("load" , ()=>{
 
 // Animacion de Cuadros como Background
         const Container = document.querySelector(".head");
@@ -43,8 +43,7 @@
             form.focus();
         }
     });
-
-    });
+});
 
 
 
