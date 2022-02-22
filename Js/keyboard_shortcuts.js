@@ -17,9 +17,7 @@ export default class Shortcuts{
             if(e.key === "Enter") this.form.focus();
 
             // Validacion para el escape del input
-            if(e.key === "Escape"){
-                e.target.value = "";
-            }
+            if(e.key === "Escape") e.target.value = "";
 
         });
     }
