@@ -1,0 +1,65 @@
+/*Corregir formulario*/
+@media only screen and (min-width: 768px){
+
+    .timeline::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: gray;
+    }
+
+    .timeline ul li{
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    .timeline ul li:nth-child(odd){
+        float: left;
+        clear: right;
+        transform: translateX(-10%);
+        border-radius: 20px 0px 20px 20px; 
+    }
+
+    .timeline ul li:nth-child(even){
+        float: right;
+        clear: left;
+        transform: translateX(10%);
+        border-radius: 0px 20px  20px 20px; 
+    }
+
+    .timeline ul li::after{
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: gray;
+        border-radius: 50%;
+        top: 0;
+    }
+
+    .timeline ul li:nth-child(odd)::after{
+        transform: translate(50%, -50%);
+        right: -40px;
+    }
+
+    .timeline ul li:nth-child(even)::after{
+        transform: translate(-50%, 50%);
+        left: -40px;
+    }
+
+    .timeline ul li:hover:after{
+        background-color: #5f41f4;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .timeline-content .solution{
+        position: absolute;
+        top: -30px;
+    }
+
+}

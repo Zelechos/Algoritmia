@@ -1,48 +1,19 @@
 'use strict'
+// ------------------------------- Imports -------------------------------
+import Shortcuts from './keyboard_shortcuts.js';
+import SearchFilters from './search_filters.js';
+// -----------------------------------------------------------------------
 
-window.addEventListener("load" , ()=>{
 
-// Animacion de Cuadros como Background
-        const Container = document.querySelector(".head");
-        for(let i = 0; i<= 25;i++){
-            const blocks = document.createElement('div');
-            blocks.classList.add("block");
-            const textLabel = document.createElement('p');
-            textLabel.textContent = "My Pragmatic Code";
-            blocks.appendChild(textLabel);
-            Container.appendChild(blocks);
-        }
+window.addEventListener("DOMContentLoaded" , ()=>{
+
+    // --------------  Search Filter --------------
+    const searcher = new SearchFilters('.pragmatic-code', '.code', '.formulario');
+    searcher.search();
     
-        function animate(){
-            anime({
-                targets : '.block',
-                translateX : function(){
-                return anime.random(0,1700)
-                },
-                translateY : function(){
-                return anime.random(-1000,1500)
-                },
-                scale : function(){
-                    return anime.random(1,5)
-                },
-                easing: 'linear',
-                duration: 5000,
-                delay: anime.stagger(1),
-                complete: animate,
-            });
-        }
-        animate();
-
-
-    // Efocando el Input
-    const form = document.querySelector("#form");
-
-    //Evento Keypress
-    window.addEventListener("keypress" , (event)=>{
-        if(13 === event.keyCode){
-            form.focus();
-        }
-    });
+    // --------------  Keyboard Shortcuts --------------
+    const shortcuts = new Shortcuts('form');
+    shortcuts.actions();
 });
 
 
