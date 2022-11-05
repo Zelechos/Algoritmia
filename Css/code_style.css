@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 .container {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   transition: 0.5s;
   width: 99%;
   max-width: 100em;
@@ -11,66 +11,63 @@
   /* background-color: #3927cc; */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas:
-      'example	      example      code      code'
-}    
+  grid-template-areas: "example	      example      code      code";
+}
 
-.example{
+.example {
   grid-area: example;
   width: 690px;
   height: 720px;
   background-color: #ffffff;
   color: #3927cc;
   position: fixed;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 5px;
   margin-top: 15px;
   margin-left: 15px;
-  padding: 10px 30px ;
+  padding: 10px 30px;
 }
 
-.title{
+.title {
   font-size: 35px;
 }
 
-.code{
+.code {
   grid-area: code;
   height: 100%;
   background-color: #5f41f4;
   color: #ffffff;
-  padding: 10px 30px ;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 10px 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 5px;
 }
 
-.img-separator{
+.img-separator {
   height: 10px;
   background-image: url("https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif");
 }
 
-
 @media (min-width: 576px) {
-  
 }
 
 @media (min-width: 768px) {
-
 }
 
 @media (max-width: 992px) {
-  .container{
+  .container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
-        'example	      example      example	      example'      
-        'code     code     code      code'
-    }
+      "example	      example      example	      example"
+      "code     code     code      code";
+  }
 
-    .example{
-      position: inherit;
-    }
+  .example {
+    position: inherit;
+  }
 }
 
 @media (min-width: 1200px) {
-  
 }

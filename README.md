@@ -1,5 +1,5 @@
-Algoritmia
-----------------------
+## Algoritmia
+
 Es una web pensada he inspirada en la web:
 [Algoritmos](https://www-igm.univ-mlv.fr/~lecroq/string/index.html)
 

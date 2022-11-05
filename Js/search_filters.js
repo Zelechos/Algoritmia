@@ -1,45 +1,38 @@
-'use strict'
+"use strict";
 
-export default class SearchFilters{
+import render from "./render.js";
 
-    // --------------- Filters ==> Filtros de busqueda en la web ---------------
-    constructor(parent, data, searcher) {
-        this.d = document;
-        this.classNameSearcher = searcher;
-        this.data = this.d.querySelectorAll(data);
-        this.pragmaticCode = this.d.querySelector(parent);
-    }
+export default class SearchFilters {
+  // --------------- Filters ==> Filtros de busqueda en la web ---------------
+  constructor(data, parent, searcher) {
+    this.d = document;
+    this.data = data;
+    this.searcher = this.d.querySelector(searcher);
+    this.pragmaticCode = this.d.querySelector(parent);
+  }
 
-    search(){
-        let counter = 0;
-        const $voidMessage = document.createElement('h1');
-        const $container = document.querySelector('.container');
+  search() {
+    const $voidMessage = document.createElement("h1");
+    const $container = document.querySelector(".container");
 
-        this.d.addEventListener('keyup', e=>{
+    this.d.addEventListener("keyup", (e) => {
+      const current_data = this.data.filter((data) =>
+        data.title.toLowerCase().includes(this.searcher.value.toLowerCase())
+      );
+      render(current_data);
 
-            if(e.target.matches(this.classNameSearcher)){
-                
-                this.data.forEach(coincidences => {
-                    
-                    (coincidences.querySelector('h1').textContent.toLowerCase().includes(e.target.value.toLowerCase()))
-                    ? this.pragmaticCode.appendChild(coincidences)
-                    : coincidences.remove();
+      if (this.pragmaticCode.children.length === 0 && counter === 0) {
+        $voidMessage.textContent = "No existen coincidencias";
+        $voidMessage.className = "message";
+        $container.prepend($voidMessage);
+      }
 
-
-                    if(this.pragmaticCode.children.length === 0 && counter === 0){
-                        $voidMessage.textContent = "No existen coincidencias";
-                        $voidMessage.className="message";
-                        $container.prepend($voidMessage);
-                        counter++;
-                    }
-                    
-                    if($container.children[0].textContent === "No existen coincidencias" && this.pragmaticCode.children.length > 0){
-                        $container.children[0].remove();
-                        counter--;
-                    }
-                });
-            }
-        });
-    }
-
+      if (
+        $container.children[0].textContent === "No existen coincidencias" &&
+        this.pragmaticCode.children.length > 0
+      ) {
+        $container.children[0].remove();
+      }
+    });
+  }
 }
