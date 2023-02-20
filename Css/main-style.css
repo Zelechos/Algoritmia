@@ -18,9 +18,10 @@ a {
 }
 
 #content {
+  padding: 35px;
+  position: fixed;
   margin: 0 auto;
-  height: 500px;
-  width: 900px;
-  border: 5px solid green;
-  border-radius: 5px;
+  margin-left: 20%;
+  height: 100%;
+  width: 80%;
 }

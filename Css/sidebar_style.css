@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 260px;
+  width: 20%;
   background-color: #0d1117;
 }
 
@@ -30,7 +30,6 @@
 }
 
 .sidebar .nav-links {
-  background-color: red;
   height: 100%;
   padding-top: 30px;
 }
@@ -41,7 +40,7 @@
 }
 
 .sidebar .nav-links li .iocn-link {
-  display: flex !important;
+  display: flex;
 }
 
 .sidebar .nav-links li i {
@@ -54,10 +53,11 @@
 }
 
 .sidebar .nav-links li .link_name {
-  background-color: green;
+  text-justify: auto;
   cursor: pointer;
-  padding: 15px;
-  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 12px;
   font-weight: 400;
   color: #fff;
 }
