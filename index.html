@@ -7,25 +7,67 @@
     <script src="./js/main.js" type="module"></script>
     <link rel="stylesheet" href="./css/main-style.css" />
     <link rel="stylesheet" href="./css/main_responsive.css" />
+    <link rel="stylesheet" href="./css/sidebar_style.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Algoritmia</title>
   </head>
   <body>
-    <!--Contenedor-->
-    <header class="head"></header>
-    <section>
-      <div class="container">
-        <!--Linea de Tiempo-->
-        <div class="timeline">
-          <!-- Searcher -->
-          <input
-            type="search"
-            class="formulario"
-            placeholder="Search Pragmatic Code..."
-            id="form"
-          />
-          <ul class="pragmatic-code"></ul>
-        </div>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bx-microchip"></i>
+        <span class="logo-name">Algoritmia</span>
       </div>
-    </section>
+
+      <ul class="nav-links">
+        <li class="page">
+          <i class="bx bx-grid-alt"></i>
+          <span class="link_name">Algoritmo 1</span>
+        </li>
+
+        <li class="page">
+          <i class="bx bx-grid-alt"></i>
+          <span class="link_name">Algoritmo 2</span>
+        </li>
+
+        <li class="page">
+          <i class="bx bx-grid-alt"></i>
+          <span class="link_name">Algoritmo 3</span>
+        </li>
+
+        <li class="page">
+          <i class="bx bx-grid-alt"></i>
+          <span class="link_name">Algoritmo 4</span>
+        </li>
+
+        <li class="page">
+          <i class="bx bx-grid-alt"></i>
+          <span class="link_name">Algoritmo 5</span>
+        </li>
+
+        <!-- <div class="iocn-link">
+          <li>
+            <a href="#">
+              <i class="bx bx-collection"></i>
+              <span class="link_name">Category</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </li>
+        </div> -->
+      </ul>
+    </div>
+
+    <div id="content"></div>
+
+    <!-- Creamos un Template HTML -->
+    <template id="template-post">
+      <h1></h1>
+      <hr />
+      <h3></h3>
+      <p></p>
+    </template>
   </body>
 </html>
