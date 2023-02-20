@@ -28,8 +28,10 @@ export default class RenderData {
   render() {
     this.definedPages();
     this.d.addEventListener("click", (e) => {
-      const target = e.target.parentElement;
-      const idLabel = target.id;
+      const target = e.target;
+
+      let idLabel = target.id ? target.id : target.parentElement.id;
+
       this.data.forEach((element) => {
         if (idLabel == element.id && idLabel !== "") {
           this.content.innerHTML = "";

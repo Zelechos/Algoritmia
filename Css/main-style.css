@@ -8,20 +8,29 @@
 }
 
 html {
-  color: white;
+  color: #0d1117;
 }
 
 a {
   text-decoration: none;
   text-decoration-color: none;
-  color: aliceblue;
+  color: #0d1117;
+}
+
+body {
+  /* background-color: black; */
 }
 
 #content {
   padding: 35px;
   position: fixed;
   margin: 0 auto;
-  margin-left: 20%;
-  height: 100%;
-  width: 80%;
+  margin-top: 10px;
+  margin-left: 26%;
+  height: 97%;
+  width: 73%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 7px;
 }

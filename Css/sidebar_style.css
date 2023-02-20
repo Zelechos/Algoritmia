@@ -1,13 +1,22 @@
 .sidebar {
+  padding: 5px;
   position: fixed;
-  top: 0;
+  margin-left: 7px;
+  margin-top: 10px;
   left: 0;
-  height: 100%;
-  width: 20%;
-  background-color: #0d1117;
+  height: 97%;
+  width: 25%;
+  /* background-color: #0d1117; */
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
 }
 
 .sidebar .logo-details {
+  border: 3px solid #fff;
+  border-radius: 7px;
   height: 60px;
   width: 100%;
   display: flex;
@@ -15,8 +24,8 @@
 }
 
 .sidebar .logo-details i {
-  font-size: 30px;
-  color: #fff;
+  font-size: 45px;
+  color: #0d1117;
   height: 50px;
   min-width: 78px;
   text-align: center;
@@ -25,7 +34,7 @@
 
 .sidebar .logo-details .logo-name {
   font-size: 22px;
-  color: #fff;
+  color: #0d1117;
   font-weight: 600;
 }
 
@@ -35,6 +44,9 @@
 }
 
 .sidebar .nav-links li {
+  border: 1px solid black;
+  background-color: pink;
+  cursor: pointer;
   position: relative;
   list-style: none;
 }
@@ -44,20 +56,18 @@
 }
 
 .sidebar .nav-links li i {
-  height: 50px;
-  min-width: 50px;
+  background-color: green;
+  height: 30px;
+  min-width: 30px;
   text-align: center;
-  line-height: 50px;
-  color: #fff;
-  font-size: 20px;
+  /* line-height: 15px; */
+  color: #0d1117;
+  font-size: 30px;
 }
 
 .sidebar .nav-links li .link_name {
-  text-justify: auto;
-  cursor: pointer;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-size: 12px;
-  font-weight: 400;
-  color: #fff;
+  background-color: red;
+  align-content: center;
+  font-size: 14px;
+  color: #0d1117;
 }
