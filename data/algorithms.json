@@ -1,39 +1,27 @@
 [
   {
     "id": 0,
-    "title": "Algoritmo Fuerza Bruta",
-    "milestone": "Algoritmos",
-    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, necessitatibus, odit fuga temporibus officia expedita dolores, excepturi provident laboriosam rem ea consequatur. Pariatur fuga optio, commodi molestiae ea neque sequi?"
+    "title": "Fuerza Bruta"
   },
   {
     "id": 1,
-    "title": "Algoritmo de autómata finito determinista",
-    "milestone": "Algoritmos",
-    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, necessitatibus, odit fuga temporibus officia expedita dolores, excepturi provident laboriosam rem ea consequatur. Pariatur fuga optio, commodi molestiae ea neque sequi?"
+    "title": "Autómata finito determinista"
   },
   {
     "id": 2,
-    "title": "Algoritmo de Karp-Rabin",
-    "milestone": "Algoritmos",
-    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, necessitatibus, odit fuga temporibus officia expedita dolores, excepturi provident laboriosam rem ea consequatur. Pariatur fuga optio, commodi molestiae ea neque sequi?"
+    "title": "Karp-Rabin"
   },
   {
     "id": 3,
-    "title": "Algoritmo de Morris-Pratt",
-    "milestone": "Algoritmos",
-    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, necessitatibus, odit fuga temporibus officia expedita dolores, excepturi provident laboriosam rem ea consequatur. Pariatur fuga optio, commodi molestiae ea neque sequi?"
+    "title": "Morris-Pratt"
   },
   {
     "id": 4,
-    "title": "Algoritmo de Knuth-Morris-Pratt",
-    "milestone": "Algoritmos",
-    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, necessitatibus, odit fuga temporibus officia expedita dolores, excepturi provident laboriosam rem ea consequatur. Pariatur fuga optio, commodi molestiae ea neque sequi?"
+    "title": "Knuth-Morris-Pratt"
   },
   {
     "id": 5,
-    "title": "Algoritmo Etherias",
-    "milestone": "Algoritmos",
-    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, necessitatibus, odit fuga temporibus officia expedita dolores, excepturi provident laboriosam rem ea consequatur. Pariatur fuga optio, commodi molestiae ea neque sequi? fuga optio, commodi molestiae ea neque sequi? fuga optio, commodi molestiae ea neque sequi? fuga optio, commodi molestiae ea neque sequi? fuga optio, commodi molestiae ea neque sequi? fuga optio, commodi molestiae ea neque sequi? fuga optio, commodi molestiae ea neque sequi? fuga optio, commodi molestiae ea neque sequi? fuga optio, commodi molestiae ea neque sequi?"
+    "title": "Etherias"
   }
 
 ]

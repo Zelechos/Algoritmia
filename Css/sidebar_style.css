@@ -1,12 +1,11 @@
 .sidebar {
   padding: 5px;
   position: fixed;
-  margin-left: 7px;
+  margin-left: 15px;
   margin-top: 10px;
   left: 0;
   height: 97%;
-  width: 25%;
-  /* background-color: #0d1117; */
+  width: 22%;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -25,7 +24,7 @@
 
 .sidebar .logo-details i {
   font-size: 45px;
-  color: #0d1117;
+  color: rgb(114, 255, 114);
   height: 50px;
   min-width: 78px;
   text-align: center;
@@ -40,34 +39,27 @@
 
 .sidebar .nav-links {
   height: 100%;
-  padding-top: 30px;
 }
 
 .sidebar .nav-links li {
-  border: 1px solid black;
-  background-color: pink;
-  cursor: pointer;
-  position: relative;
   list-style: none;
-}
-
-.sidebar .nav-links li .iocn-link {
-  display: flex;
-}
-
-.sidebar .nav-links li i {
-  background-color: green;
-  height: 30px;
-  min-width: 30px;
-  text-align: center;
-  /* line-height: 15px; */
-  color: #0d1117;
-  font-size: 30px;
+  padding-top: 10px;
+  cursor: pointer;
 }
 
 .sidebar .nav-links li .link_name {
-  background-color: red;
-  align-content: center;
-  font-size: 14px;
+  font-size: 17px;
   color: #0d1117;
+}
+
+.sidebar .nav-links li :hover {
+  padding: 5px 3px 5px 3px;
+  background-color: rgb(114, 255, 114);
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.sidebar hr {
+  padding: auto;
 }

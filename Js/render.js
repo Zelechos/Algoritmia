@@ -27,22 +27,34 @@ export default class RenderData {
 
   render() {
     this.definedPages();
+    // Aqui traemos nuestro archivo markdown con una peticion local por fetch
     this.d.addEventListener("click", (e) => {
       const target = e.target;
-
       let idLabel = target.id ? target.id : target.parentElement.id;
 
       this.data.forEach((element) => {
         if (idLabel == element.id && idLabel !== "") {
-          this.content.innerHTML = "";
-          this.template.querySelector("h1").textContent = element.title;
-          this.template.querySelector("h3").textContent = element.milestone;
-          this.template.querySelector("p").textContent = element.description;
-          let $clone = this.template.cloneNode(true);
-          this.fragment.appendChild($clone);
+          let url = `./data/articles/${element.title}.md`;
+          fetch(url)
+            .then((response) =>
+              response.ok ? response.text() : Promise.reject(response)
+            )
+            .then((liar) => {
+              // Creamos un converter para converitr de .md a .html
+              let converter = new showdown.Converter();
+              // Convertimos nuestro .md a .html
+              let codeHtml = converter.makeHtml(liar);
+              this.content.innerHTML = codeHtml;
+              // otra manera de resumir todo lo anterior seria :
+              // $main.innerHTML = new showdown.Converter().makeHtml(liar);
+            })
+            .catch((error) => {
+              let message = error.statusText || "Ocurrio un error";
+              this.content.innerHTML = `<h2>Error ${error.status} : ${message}<h2>`;
+            })
+            .finally(console.warn(`Liar ready`));
         }
       });
-      this.content.appendChild(this.fragment);
     });
   }
 }
