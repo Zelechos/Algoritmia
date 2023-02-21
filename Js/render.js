@@ -5,7 +5,6 @@ export default class RenderData {
     this.d = document;
     this.data = data;
     this.algorithms = this.d.getElementsByClassName("page");
-    this.template = this.d.getElementById("template-post").content;
     this.templateList = this.d.getElementById("template-list").content;
     this.fragment = this.d.createDocumentFragment();
     this.content = this.d.getElementById("content");
