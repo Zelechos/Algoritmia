@@ -1,4 +1,4 @@
-# Morris-Pratt
+# Algoritmo de Morris-Pratt
 
 ```java
 

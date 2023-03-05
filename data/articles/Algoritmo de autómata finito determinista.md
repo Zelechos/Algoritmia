@@ -1,4 +1,4 @@
-# Autómata finito determinista
+# Algoritmo de autómata finito determinista
 
 <a href="https://twitter.com/CoderPragmatic" target="_blank" >
   <img align="center" 

@@ -1,4 +1,4 @@
-# Karp-Rabin
+# Algoritmo de Karp-Rabin
 
 <!--   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/webpack/webpack-original-wordmark.svg" alt="gulp" width="65" height="45" /> -->
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="95" height="75" />

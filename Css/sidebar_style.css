@@ -1,9 +1,8 @@
 .sidebar {
   padding: 5px;
-  position: fixed;
+  position: absolute;
   margin-left: 15px;
   left: 0;
-  height: 100%;
   width: 22%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -12,8 +11,6 @@
 }
 
 .sidebar .logo-details {
-  border: 3px solid #fff;
-  border-radius: 7px;
   height: 60px;
   width: 100%;
   display: flex;
@@ -33,6 +30,11 @@
   font-size: 22px;
   color: #0d1117;
   font-weight: 600;
+}
+
+#line{
+  height: 12px;
+  width: 100%;
 }
 
 .sidebar .nav-links {
@@ -55,7 +57,6 @@
   background-color: rgb(114, 255, 114);
   border-radius: 5px;
   font-size: 18px;
-  color: #fff;
 }
 
 .sidebar hr {

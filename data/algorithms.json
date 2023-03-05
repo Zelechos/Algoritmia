@@ -1,27 +1,144 @@
 [
-  {
-    "id": 0,
-    "title": "Fuerza Bruta"
-  },
-  {
-    "id": 1,
-    "title": "Autómata finito determinista"
-  },
-  {
-    "id": 2,
-    "title": "Karp-Rabin"
-  },
-  {
-    "id": 3,
-    "title": "Morris-Pratt"
-  },
-  {
-    "id": 4,
-    "title": "Knuth-Morris-Pratt"
-  },
-  {
-    "id": 5,
-    "title": "Etherias"
-  }
-
+    {
+        "id": 0,
+        "title": "Algoritmo de fuerza bruta"
+    },
+    {
+        "id": 1,
+        "title": "Algoritmo de autómata finito determinista"
+    },
+    {
+        "id": 2,
+        "title": "Algoritmo de Karp-Rabin"
+    },
+    {
+        "id": 3,
+        "title": "Cambio o algoritmo"
+    },
+    {
+        "id": 4,
+        "title": "Algoritmo de Morris-Pratt"
+    },
+    {
+        "id": 5,
+        "title": "Algoritmo de Knuth-Morris-Pratt"
+    },
+    {
+        "id": 6,
+        "title": "algoritmo de Simon"
+    },
+    {
+        "id": 7,
+        "title": "Algoritmo de Colussi"
+    },
+    {
+        "id": 8,
+        "title": "Algoritmo de Galil-Giancarlo"
+    },
+    {
+        "id": 9,
+        "title": "Algoritmo Apostólico-Crochemore"
+    },
+    {
+        "id": 10,
+        "title": "Algoritmo no tan ingenuo"
+    },
+    {
+        "id": 11,
+        "title": "Algoritmo de Boyer-Moore"
+    },
+    {
+        "id": 12,
+        "title": "Algoritmo Turbo BM"
+    },
+    {
+        "id": 13,
+        "title": "Algoritmo Apostólico-Giancarlo"
+    },
+    {
+        "id": 14,
+        "title": "Algoritmo Colussi inverso"
+    },
+    {
+        "id": 15,
+        "title": "Algoritmo Horspool"
+    },
+    {
+        "id": 16,
+        "title": "Algoritmo de búsqueda rápida"
+    },
+    {
+        "id": 17,
+        "title": "Algoritmo de Boyer-Moore sintonizado"
+    },
+    {
+        "id": 18,
+        "title": "Algoritmo de Zhu-Takaoka"
+    },
+    {
+        "id": 19,
+        "title": "Algoritmo de Berry-Ravindran"
+    },
+    {
+        "id": 20,
+        "title": "Algoritmo de Smith"
+    },
+    {
+        "id": 21,
+        "title": "Algoritmo Raita"
+    },
+    {
+        "id": 22,
+        "title": "Algoritmo de factor inverso"
+    },
+    {
+        "id": 23,
+        "title": "Algoritmo de factor inverso turbo"
+    },
+    {
+        "id": 24,
+        "title": "Algoritmo de coincidencia Dawg hacia adelante"
+    },
+    {
+        "id": 25,
+        "title": "Algoritmo de coincidencia Dawg no determinista hacia atrás"
+    },
+    {
+        "id": 26,
+        "title": "Algoritmo de coincidencia de Oracle hacia atrás"
+    },
+    {
+        "id": 27,
+        "title": "Algoritmo de Galil-Seiferas"
+    },
+    {
+        "id": 28,
+        "title": "Algoritmo de dos vías"
+    },
+    {
+        "id": 29,
+        "title": "Coincidencia de cadenas en el algoritmo de alfabetos ordenados"
+    },
+    {
+        "id": 30,
+        "title": "Algoritmo de desajuste óptimo"
+    },
+    {
+        "id": 31,
+        "title": "Algoritmo de cambio máximo"
+    },
+    {
+        "id": 32,
+        "title": "Omitir algoritmo de búsqueda"
+    },
+    {
+        "id": 33,
+        "title": "Algoritmo de búsqueda por omisión de KMP"
+    },
+    {
+        "id": 34,
+        "title": "Algoritmo alfa de búsqueda por omisión"
+    }
 ]
+
+

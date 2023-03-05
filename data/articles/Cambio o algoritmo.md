@@ -1,4 +1,50 @@
-# Knuth-Morris-Pratt
+# Cambio o algoritmo <span style="max-width: 36px; display: flex;"><img src="https://raw.githubusercontent.com/xgqfrms/cdn/gh-pages/images/wave-hand.gif" srcset="https://raw.githubusercontent.com/xgqfrms/cdn/gh-pages/images/wave-hand.gif 1x, https://raw.githubusercontent.com/xgqfrms/cdn/gh-pages/images/wave-hand.gif 2x" alt="👋" title="wave-hand" style="width: 36px !important;"/></span>
+
+<img align="center" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="javascript" width="1000"/>
+<img align="center" src="https://raw.githubusercontent.com/Zelechos/Zelechos/main/bannerReadMe.jpg" alt="javascript" width="1000"/>
+<img align="center" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="javascript" width="1000"/>
+
+<a href="https://www.linkedin.com/in/alex-tumiri-huanca-6234b3195/" target="_blank">
+  <img align="center" 
+       alt="Linkedin" 
+       width="35px" 
+       src="https://user-images.githubusercontent.com/55005374/103146171-312a4c00-470b-11eb-8839-992580bb8206.png" />
+</a>
+
+<a href="mailto:alextumirihuanca@gmail.com" target="_blank" >
+  <img align="center" 
+       alt="Gmail" 
+       width="35px" 
+       src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" />
+</a>
+
+<a href="https://www.facebook.com/PragmaticCodersGroup" target="_blank" >
+  <img align="center" 
+       alt="Facebook" 
+       width="35px" 
+       src="https://cdn-icons-png.flaticon.com/512/733/733547.png" />
+</a>
+
+<a href="https://www.instagram.com/pragmatic_coder/" target="_blank" >
+  <img align="center" 
+       alt="Instagram" 
+       width="35px" 
+       src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" />
+</a>
+
+<a href="https://twitter.com/CoderPragmatic" target="_blank" >
+  <img align="center" 
+       alt="Twitter" 
+       width="35px" 
+       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" />
+</a>
+
+<a href="https://www.youtube.com/channel/UCQ1D3FO4ICg6SVivOTwIe4w" target="_blank" >
+  <img align="center" 
+       alt="Youtube" 
+       width="35px" 
+       src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" />
+</a>
 
 <img align="right" width=100px height=100px alt="side_sticker" src="https://media.giphy.com/media/TEnXkcsHrP4YedChhA/giphy.gif" />
 <!-- <img align="right" src="https://avatars.githubusercontent.com/u/41464891?s=400&u=a9a2e35167f1e1df2745ab20b994242bcb69afeb&v=4" alt="pragmatic coder logo" width="100"/> -->
