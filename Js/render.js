@@ -28,6 +28,7 @@ export default class RenderData {
 
   render() {
     this.definedPages();
+
     // Aqui traemos nuestro archivo markdown con una peticion local por fetch
     this.d.addEventListener("click", (e) => {
       const target = e.target;
@@ -37,7 +38,7 @@ export default class RenderData {
         if (idLabel == "35") {
           url = `./data/articles/Algoritmia.md`;
         }
-        
+
         if (idLabel == element.id && idLabel !== "") {
           url = `./data/articles/${element.title}.md`;
         }
@@ -47,24 +48,24 @@ export default class RenderData {
     });
   }
 
-  request(url){
+  request(url) {
     fetch(url)
-    .then((response) =>
-      response.ok ? response.text() : Promise.reject(response)
-    )
-    .then((liar) => {
-      // Creamos un converter para converitr de .md a .html
-      let converter = new showdown.Converter();
-      // Convertimos nuestro .md a .html
-      let codeHtml = converter.makeHtml(liar);
-      this.content.innerHTML = codeHtml;
-      // otra manera de resumir todo lo anterior seria :
-      // $main.innerHTML = new showdown.Converter().makeHtml(liar);
-    })
-    .catch((error) => {
-      let message = error.statusText || "Ocurrio un error";
-      this.content.innerHTML = `<h2>Error ${error.status} : ${message}<h2>`;
-    })
-    .finally(console.warn(`Liar ready`));
+      .then((response) =>
+        response.ok ? response.text() : Promise.reject(response)
+      )
+      .then((liar) => {
+        // Creamos un converter para converitr de .md a .html
+        let converter = new showdown.Converter();
+        // Convertimos nuestro .md a .html
+        let codeHtml = converter.makeHtml(liar);
+        this.content.innerHTML = codeHtml;
+        // otra manera de resumir todo lo anterior seria :
+        // $main.innerHTML = new showdown.Converter().makeHtml(liar);
+      })
+      .catch((error) => {
+        let message = error.statusText || "Ocurrio un error";
+        this.content.innerHTML = `<h2>Error ${error.status} : ${message}<h2>`;
+      })
+      .finally(console.warn(`Liar ready`));
   }
 }
