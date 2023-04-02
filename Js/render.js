@@ -15,6 +15,7 @@ export default class RenderData {
   definedPages() {
     this.title.setAttribute("id", "35");
     this.data.forEach((element) => {
+      if (element.id == "35") return;
       this.templateList.querySelector(".link_name").textContent = element.title;
       let $clone = this.templateList.cloneNode(true);
       this.fragment.appendChild($clone);
@@ -28,43 +29,35 @@ export default class RenderData {
 
   render() {
     this.definedPages();
-    // Aqui traemos nuestro archivo markdown con una peticion local por fetch
     this.d.addEventListener("click", (e) => {
       const target = e.target;
       let idLabel = target.id ? target.id : target.parentElement.id;
-      let url;
       this.data.forEach((element) => {
-        if (idLabel == "35") {
-          url = `./data/articles/Algoritmia.md`;
-        }
-        
         if (idLabel == element.id && idLabel !== "") {
-          url = `./data/articles/${element.title}.md`;
+          let url = `./data/articles/${element.title}.md`;
+          this.request(url);
         }
-
-        this.request(url);
       });
     });
   }
 
-  request(url){
+  request(url) {
     fetch(url)
-    .then((response) =>
-      response.ok ? response.text() : Promise.reject(response)
-    )
-    .then((liar) => {
-      // Creamos un converter para converitr de .md a .html
-      let converter = new showdown.Converter();
-      // Convertimos nuestro .md a .html
-      let codeHtml = converter.makeHtml(liar);
-      this.content.innerHTML = codeHtml;
-      // otra manera de resumir todo lo anterior seria :
-      // $main.innerHTML = new showdown.Converter().makeHtml(liar);
-    })
-    .catch((error) => {
-      let message = error.statusText || "Ocurrio un error";
-      this.content.innerHTML = `<h2>Error ${error.status} : ${message}<h2>`;
-    })
-    .finally(console.warn(`Liar ready`));
+      .then((response) =>
+        response.ok ? response.text() : Promise.reject(response)
+      )
+      .then((liar) => {
+        let converter = new showdown.Converter();
+        let codeHtml = converter.makeHtml(liar);
+        this.content.innerHTML = codeHtml;
+      })
+      .catch((error) => {
+        let text = url.substring(16, url.length - 3);
+        this.content.innerHTML = `<h2>Proximamente ${text}<h2>`;
+      });
+  }
+
+  begin(url = `./data/articles/Algoritmia.md`) {
+    this.request(url);
   }
 }
