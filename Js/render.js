@@ -15,6 +15,7 @@ export default class RenderData {
   definedPages() {
     this.title.setAttribute("id", "35");
     this.data.forEach((element) => {
+      if (element.id == "35") return;
       this.templateList.querySelector(".link_name").textContent = element.title;
       let $clone = this.templateList.cloneNode(true);
       this.fragment.appendChild($clone);
@@ -28,22 +29,14 @@ export default class RenderData {
 
   render() {
     this.definedPages();
-
-    // Aqui traemos nuestro archivo markdown con una peticion local por fetch
     this.d.addEventListener("click", (e) => {
       const target = e.target;
       let idLabel = target.id ? target.id : target.parentElement.id;
-      let url;
       this.data.forEach((element) => {
-        if (idLabel == "35") {
-          url = `./data/articles/Algoritmia.md`;
-        }
-
         if (idLabel == element.id && idLabel !== "") {
-          url = `./data/articles/${element.title}.md`;
+          let url = `./data/articles/${element.title}.md`;
+          this.request(url);
         }
-
-        this.request(url);
       });
     });
   }
@@ -67,5 +60,9 @@ export default class RenderData {
         this.content.innerHTML = `<h2>Error ${error.status} : ${message}<h2>`;
       })
       .finally(console.warn(`Liar ready`));
+  }
+
+  begin(url = `./data/articles/Algoritmia.md`) {
+    this.request(url);
   }
 }
