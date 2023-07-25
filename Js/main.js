@@ -10,20 +10,20 @@ import effect3D from "./effect3D.js";
 window.addEventListener("DOMContentLoaded", async () => {
   // -------------- Render Data -------------
   let data = await get_data();
-  const renderDate = new RenderData(data);
-  renderDate.render();
-  renderDate.begin();
+  const renderData = new RenderData(data);
+  renderData.render();
+  renderData.begin();
 
   // --------------  Effect 3D --------------
   effect3D();
 
   // --------------  Keyboard Shortcuts --------------
-  // const shortcuts = new Shortcuts("form");
-  // shortcuts.actions();
+  const shortcuts = new Shortcuts("form");
+  shortcuts.actions();
 
   // --------------  Search Filter --------------
-  // const searcher = new SearchFilters(data, ".pragmatic-code", ".formulario");
-  // searcher.search();
+  const searcher = new SearchFilters(data, ".nav-links", ".algorithm-filter");
+  searcher.search();
 
   console.warn("Welcome to Algoritmia");
 });

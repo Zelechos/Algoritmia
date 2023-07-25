@@ -1,10 +1,10 @@
 "use strict";
-
 export default class Shortcuts {
   constructor(form) {
     this.d = document;
     this.w = window;
     this.form = this.d.getElementById(form);
+    this.sidebarList = this.d.querySelector(".nav-links");
   }
 
   actions() {

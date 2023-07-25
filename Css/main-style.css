@@ -33,3 +33,31 @@ a {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 7px;
 }
+
+/* Scroll of content styles */
+html::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra de desplazamiento vertical */
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #555; /* Color del pulgar de la barra de desplazamiento */
+  border-radius: 5px; /* Bordes redondeados del pulgar de la barra de desplazamiento */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color del pulgar de la barra de desplazamiento al pasar el mouse por encima */
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #0d1117; /* Color de la pista de la barra de desplazamiento */
+  border: #555 solid 0.02px;
+  border-radius: 5px; /* Bordes redondeados de la pista de la barra de desplazamiento */
+}
+
+.message {
+  text-align: center;
+}
+
+.hr-magic {
+  width: 880px;
+}

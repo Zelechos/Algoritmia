@@ -12,28 +12,25 @@ export default class RenderData {
     this.title = this.d.querySelector(".logo-details");
   }
 
-  definedPages() {
-    this.title.setAttribute("id", "35");
+  createPages() {
+    this.title.setAttribute("id", "Algoritmia");
     this.data.forEach((element) => {
       if (element.id == "35") return;
       this.templateList.querySelector(".link_name").textContent = element.title;
+      this.templateList.querySelector(".page").id = element.title;
       let $clone = this.templateList.cloneNode(true);
       this.fragment.appendChild($clone);
     });
     this.sidebarList.appendChild(this.fragment);
-    const pagesToArray = Object.entries(this.algorithms);
-    pagesToArray.forEach((element, index) => {
-      element[1].setAttribute("id", `${index}`);
-    });
   }
 
   render() {
-    this.definedPages();
+    this.createPages();
     this.d.addEventListener("click", (e) => {
       const target = e.target;
       let idLabel = target.id ? target.id : target.parentElement.id;
       this.data.forEach((element) => {
-        if (idLabel == element.id && idLabel !== "") {
+        if (idLabel == element.title && idLabel !== "") {
           let url = `./data/articles/${element.title}.md`;
           this.request(url);
         }

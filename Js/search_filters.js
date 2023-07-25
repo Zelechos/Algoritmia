@@ -1,6 +1,5 @@
 "use strict";
-
-import render from "./render.js";
+import RenderData from "./render.js";
 
 export default class SearchFilters {
   // --------------- Filters ==> Filtros de busqueda en la web ---------------
@@ -8,31 +7,32 @@ export default class SearchFilters {
     this.d = document;
     this.data = data;
     this.searcher = this.d.querySelector(searcher);
-    this.pragmaticCode = this.d.querySelector(parent);
+    this.parent = this.d.querySelector(parent);
   }
 
   search() {
-    const $voidMessage = document.createElement("h1");
-    const $container = document.querySelector(".container");
+    const $voidMessage = document.createElement("p");
+    $voidMessage.setAttribute("class", "message");
 
     this.d.addEventListener("keyup", (e) => {
       const current_data = this.data.filter((data) =>
         data.title.toLowerCase().includes(this.searcher.value.toLowerCase())
       );
-      render(current_data);
+      this.clearData(this.parent);
+      const renderData = new RenderData(current_data);
+      renderData.render();
 
-      if (this.pragmaticCode.children.length === 0 && counter === 0) {
-        $voidMessage.textContent = "No existen coincidencias";
+      if (this.parent.children.length === 0) {
+        $voidMessage.textContent = "==> No existen coincidencias <==";
         $voidMessage.className = "message";
-        $container.prepend($voidMessage);
-      }
-
-      if (
-        $container.children[0].textContent === "No existen coincidencias" &&
-        this.pragmaticCode.children.length > 0
-      ) {
-        $container.children[0].remove();
+        this.parent.appendChild($voidMessage);
       }
     });
+  }
+
+  clearData(parent) {
+    while (parent.firstChild) {
+      parent.removeChild(parent.firstChild);
+    }
   }
 }
